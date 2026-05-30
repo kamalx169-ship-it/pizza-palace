@@ -35,7 +35,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // Keep server awake every 14 minutes
 setInterval(() => {
-  https.get('https://pizza-palace-production.up.railway.app', (res) => {
+  https.get('https://pizza-palace-hdtk.onrender.com', (res) => {
     console.log('Server kept alive:', res.statusCode);
   }).on('error', (err) => {
     console.log('Keep alive error:', err.message);
